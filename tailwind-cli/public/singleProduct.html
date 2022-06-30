@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    
+</head>
+<body class="bg-gray-100">
+    <!-- app bar -->
+    <div class="flex md:hidden items-center justify-between mt-10 mb-6 px-4">
+        <div class="w-7 h-7 bg-white shadow-lg flex items-center justify-center rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+        </div>
+        <div class="text-lg font-bold text-slate-800">Iphone 13 pro 128 GB</div>
+        <div class="w-7 h-7 bg-white shadow-lg flex justify-center items-center rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </div>
+    </div>
+    <!-- bread crumps -->
+    <div class="flex md:hidden items-center gap-x-2 px-4 text-sm mb-2">
+        <span class="text-orange-500">Mobile</span>
+        <span>
+            <svg class="rotate-180" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.944605 4.20001L0.950718 4.19373L0.956607 4.18725C1.32573 3.78078 2.02428 3.21446 2.78795 2.68511C3.55136 2.15595 4.3254 1.70144 4.83012 1.49807L4.83016 1.49817L4.83934 1.49425C4.9071 1.46536 5.04003 1.41502 5.18119 1.3714C5.32581 1.32672 5.43223 1.304 5.48132 1.2999C5.61125 1.30172 5.73419 1.33117 5.85588 1.39173C6.003 1.4793 6.12099 1.61405 6.18635 1.76875C6.20654 1.82465 6.24286 1.96706 6.2795 2.13162C6.29674 2.20908 6.31191 2.28146 6.32269 2.33467C6.32679 2.3549 6.33016 2.37191 6.33272 2.38505L6.33888 2.41907C6.43995 2.97739 6.5 3.92131 6.5 4.9942C6.5 5.9933 6.44261 6.893 6.36023 7.47421C6.35734 7.48646 6.3548 7.4984 6.35289 7.50753C6.34799 7.53103 6.34185 7.56245 6.33547 7.59507L6.33512 7.59688L6.33508 7.59707C6.3215 7.66652 6.30404 7.75588 6.28346 7.85134C6.26272 7.94755 6.23997 8.04456 6.2166 8.12825C6.20496 8.16994 6.19405 8.20513 6.18419 8.23328C6.17932 8.24718 6.17515 8.25811 6.17176 8.26634L6.16778 8.27562C6.16701 8.27731 6.16655 8.27826 6.16641 8.27855C6.1664 8.27855 6.1664 8.27856 6.1664 8.27857C6.02897 8.54694 5.76907 8.69981 5.50794 8.69981H5.48063C5.45851 8.69813 5.40766 8.69019 5.32578 8.66857C5.24294 8.64671 5.15072 8.61694 5.06198 8.58535C5.02814 8.5733 4.9956 8.56128 4.9652 8.54971L4.73986 8.4536C4.25814 8.24812 3.50692 7.8079 2.7622 7.29375C2.01557 6.77828 1.32584 6.2231 0.948006 5.80297L0.940361 5.79447L0.932428 5.78642L0.932424 5.78641L0.932391 5.78638L0.932366 5.78635L0.932336 5.78632L0.932191 5.78617L0.930758 5.78472L0.924312 5.77811L0.89904 5.75191C0.87732 5.72922 0.847428 5.69759 0.81482 5.66193C0.743684 5.58413 0.680493 5.50967 0.650976 5.46665L0.645463 5.45861L0.639642 5.4508C0.550658 5.33135 0.5 5.17339 0.5 5.0047C0.5 4.81956 0.55263 4.65736 0.644446 4.52729C0.665497 4.50433 0.691697 4.47506 0.717762 4.44593C0.731054 4.43107 0.744311 4.41626 0.756832 4.40234C0.815459 4.33717 0.882201 4.26406 0.944605 4.20001Z" stroke="#222F5D"/>
+            </svg>                
+        </span>
+        <span class="text-orange-500">Apple</span>
+        <span>
+            <svg class="rotate-180" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.944605 4.20001L0.950718 4.19373L0.956607 4.18725C1.32573 3.78078 2.02428 3.21446 2.78795 2.68511C3.55136 2.15595 4.3254 1.70144 4.83012 1.49807L4.83016 1.49817L4.83934 1.49425C4.9071 1.46536 5.04003 1.41502 5.18119 1.3714C5.32581 1.32672 5.43223 1.304 5.48132 1.2999C5.61125 1.30172 5.73419 1.33117 5.85588 1.39173C6.003 1.4793 6.12099 1.61405 6.18635 1.76875C6.20654 1.82465 6.24286 1.96706 6.2795 2.13162C6.29674 2.20908 6.31191 2.28146 6.32269 2.33467C6.32679 2.3549 6.33016 2.37191 6.33272 2.38505L6.33888 2.41907C6.43995 2.97739 6.5 3.92131 6.5 4.9942C6.5 5.9933 6.44261 6.893 6.36023 7.47421C6.35734 7.48646 6.3548 7.4984 6.35289 7.50753C6.34799 7.53103 6.34185 7.56245 6.33547 7.59507L6.33512 7.59688L6.33508 7.59707C6.3215 7.66652 6.30404 7.75588 6.28346 7.85134C6.26272 7.94755 6.23997 8.04456 6.2166 8.12825C6.20496 8.16994 6.19405 8.20513 6.18419 8.23328C6.17932 8.24718 6.17515 8.25811 6.17176 8.26634L6.16778 8.27562C6.16701 8.27731 6.16655 8.27826 6.16641 8.27855C6.1664 8.27855 6.1664 8.27856 6.1664 8.27857C6.02897 8.54694 5.76907 8.69981 5.50794 8.69981H5.48063C5.45851 8.69813 5.40766 8.69019 5.32578 8.66857C5.24294 8.64671 5.15072 8.61694 5.06198 8.58535C5.02814 8.5733 4.9956 8.56128 4.9652 8.54971L4.73986 8.4536C4.25814 8.24812 3.50692 7.8079 2.7622 7.29375C2.01557 6.77828 1.32584 6.2231 0.948006 5.80297L0.940361 5.79447L0.932428 5.78642L0.932424 5.78641L0.932391 5.78638L0.932366 5.78635L0.932336 5.78632L0.932191 5.78617L0.930758 5.78472L0.924312 5.77811L0.89904 5.75191C0.87732 5.72922 0.847428 5.69759 0.81482 5.66193C0.743684 5.58413 0.680493 5.50967 0.650976 5.46665L0.645463 5.45861L0.639642 5.4508C0.550658 5.33135 0.5 5.17339 0.5 5.0047C0.5 4.81956 0.55263 4.65736 0.644446 4.52729C0.665497 4.50433 0.691697 4.47506 0.717762 4.44593C0.731054 4.43107 0.744311 4.41626 0.756832 4.40234C0.815459 4.33717 0.882201 4.26406 0.944605 4.20001Z" stroke="#222F5D"/>
+            </svg>
+        </span>
+        <span class="text-gray-500">Iphone 13</span>
+    </div>
+    <!-- desktop navbar -->
+    <nav class="bg-white hidden md:block p-4 shadow-lg sticky z-10 top-0 mb-8">
+        <div class="container 2xl:max-w-screen-2xl mx-auto flex items-center justify-between">
+            <ul class="flex items-center gap-x-0 lg:gap-x-4 text-slate-800 lg:text-lg">
+                <li class="text-center">
+                    <a class="block p-4 hover:bg-gray-50 rounded-md transition-all duration-500" href="">
+                        <div>
+                            <span class="text-2xl font-extrabold text-orange-600">Digi</span>
+                            <span class="text-2xl font-extrabold text-slate-800 -ml-1">tize</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="block p-4 hover:bg-gray-50 rounded-md transition-all duration-500" href="">Home</a>
+                </li>
+                <li>
+                    <a class="block p-4 hover:bg-gray-50 rounded-md transition-all duration-500" href="">Laptop</a>
+                </li>
+                <li>
+                    <a class="block p-4 hover:bg-gray-50 rounded-md transition-all duration-500" href="">Smartwatch</a>
+                </li>
+                <li>
+                    <a class="block p-4 hover:bg-gray-50 rounded-md transition-all duration-500" href="">Mobile</a>
+                </li>
+            </ul>
+            <div class="flex-1 xl:max-w-xl ml-4">
+                <div class="bg-gray-100 p-1 rounded-lg flex items-center xl:max-w-xl">
+                    <input type="text" placeholder="product, brand, color..." class="focus:outline-none bg-transparent w-full p-2 text-slate-800"/>
+                    <span class="mr-3 ml-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="md:px-6 container mx-auto 2xl:max-w-screen-2xl grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
+        <!-- sidebar -->
+        <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
+            <div class="bg-white p-5 rounded-xl max-h-[calc(100vh_-_130px)] overflow-auto sticky top-28">
+                <!-- categories -->
+                <div class="mb-4">
+                    <div class="text-xl font-bold text-orange-500 ml-2 mb-4">Category</div>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center text-slate-800 p-2 hover:bg-gray-50 cursor-pointer rounded-md">
+                                <span class="relative w-5 h-5 rounded-full bg-gray-100">
+                                    <svg class="w-4 h-5 absolute top-1.5 right-1" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 4.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 1.75 1.75 1 4.75 1h4.5c3 0 3.75.75 3.75 3.75ZM8.5 3.625h-3" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13.825A1.163 1.163 0 1 0 7 11.5a1.163 1.163 0 0 0 0 2.325Z" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="ml-2">Mobile</span>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center text-slate-800 p-2 hover:bg-gray-50 cursor-pointer rounded-md">
+                                <span class="relative w-5 h-5 rounded-full bg-gray-100"><svg class="w-4 h-5 absolute top-1.5 right-1" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.293 1.333H11.7c2.373 0 2.967.594 2.967 2.96v4.22c0 2.374-.594 2.96-2.96 2.96H4.293c-2.366.007-2.96-.586-2.96-2.953V4.294c0-2.367.594-2.96 2.96-2.96ZM8 11.48v3.187M1.333 8.666h13.334M5 14.666h6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="ml-2">Laptop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-slate-800 p-2 hover:bg-gray-50 cursor-pointer rounded-md">
+                                <span class="relative w-5 h-5 rounded-full bg-gray-100"><svg class="w-4 h-5 absolute top-1.5 right-1" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.666 12.667h4.667c1.553 0 2.333-.78 2.333-2.333V5.667c0-1.553-.78-2.333-2.333-2.333H5.666c-1.553 0-2.333.78-2.333 2.333v4.667c0 1.553.78 2.333 2.333 2.333ZM10.666 1.333H5.333M10.666 14.666H5.333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.667 6.333v2h2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="ml-2">Smartwatch</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- bread crumps -->
+        <div class="hidden md:block col-span-8 lg:col-span-9 xl:col-span-10">
+            <div class="bg-white rounded-lg flex items-center gap-x-2 px-4 py-4">
+                <span class="text-orange-500">Mobile</span>
+                <span>
+                    <svg class="rotate-180" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.944605 4.20001L0.950718 4.19373L0.956607 4.18725C1.32573 3.78078 2.02428 3.21446 2.78795 2.68511C3.55136 2.15595 4.3254 1.70144 4.83012 1.49807L4.83016 1.49817L4.83934 1.49425C4.9071 1.46536 5.04003 1.41502 5.18119 1.3714C5.32581 1.32672 5.43223 1.304 5.48132 1.2999C5.61125 1.30172 5.73419 1.33117 5.85588 1.39173C6.003 1.4793 6.12099 1.61405 6.18635 1.76875C6.20654 1.82465 6.24286 1.96706 6.2795 2.13162C6.29674 2.20908 6.31191 2.28146 6.32269 2.33467C6.32679 2.3549 6.33016 2.37191 6.33272 2.38505L6.33888 2.41907C6.43995 2.97739 6.5 3.92131 6.5 4.9942C6.5 5.9933 6.44261 6.893 6.36023 7.47421C6.35734 7.48646 6.3548 7.4984 6.35289 7.50753C6.34799 7.53103 6.34185 7.56245 6.33547 7.59507L6.33512 7.59688L6.33508 7.59707C6.3215 7.66652 6.30404 7.75588 6.28346 7.85134C6.26272 7.94755 6.23997 8.04456 6.2166 8.12825C6.20496 8.16994 6.19405 8.20513 6.18419 8.23328C6.17932 8.24718 6.17515 8.25811 6.17176 8.26634L6.16778 8.27562C6.16701 8.27731 6.16655 8.27826 6.16641 8.27855C6.1664 8.27855 6.1664 8.27856 6.1664 8.27857C6.02897 8.54694 5.76907 8.69981 5.50794 8.69981H5.48063C5.45851 8.69813 5.40766 8.69019 5.32578 8.66857C5.24294 8.64671 5.15072 8.61694 5.06198 8.58535C5.02814 8.5733 4.9956 8.56128 4.9652 8.54971L4.73986 8.4536C4.25814 8.24812 3.50692 7.8079 2.7622 7.29375C2.01557 6.77828 1.32584 6.2231 0.948006 5.80297L0.940361 5.79447L0.932428 5.78642L0.932424 5.78641L0.932391 5.78638L0.932366 5.78635L0.932336 5.78632L0.932191 5.78617L0.930758 5.78472L0.924312 5.77811L0.89904 5.75191C0.87732 5.72922 0.847428 5.69759 0.81482 5.66193C0.743684 5.58413 0.680493 5.50967 0.650976 5.46665L0.645463 5.45861L0.639642 5.4508C0.550658 5.33135 0.5 5.17339 0.5 5.0047C0.5 4.81956 0.55263 4.65736 0.644446 4.52729C0.665497 4.50433 0.691697 4.47506 0.717762 4.44593C0.731054 4.43107 0.744311 4.41626 0.756832 4.40234C0.815459 4.33717 0.882201 4.26406 0.944605 4.20001Z" stroke="#222F5D"/>
+                    </svg>                
+                </span>
+                <span class="text-orange-500">Apple</span>
+                <span>
+                    <svg class="rotate-180" width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.944605 4.20001L0.950718 4.19373L0.956607 4.18725C1.32573 3.78078 2.02428 3.21446 2.78795 2.68511C3.55136 2.15595 4.3254 1.70144 4.83012 1.49807L4.83016 1.49817L4.83934 1.49425C4.9071 1.46536 5.04003 1.41502 5.18119 1.3714C5.32581 1.32672 5.43223 1.304 5.48132 1.2999C5.61125 1.30172 5.73419 1.33117 5.85588 1.39173C6.003 1.4793 6.12099 1.61405 6.18635 1.76875C6.20654 1.82465 6.24286 1.96706 6.2795 2.13162C6.29674 2.20908 6.31191 2.28146 6.32269 2.33467C6.32679 2.3549 6.33016 2.37191 6.33272 2.38505L6.33888 2.41907C6.43995 2.97739 6.5 3.92131 6.5 4.9942C6.5 5.9933 6.44261 6.893 6.36023 7.47421C6.35734 7.48646 6.3548 7.4984 6.35289 7.50753C6.34799 7.53103 6.34185 7.56245 6.33547 7.59507L6.33512 7.59688L6.33508 7.59707C6.3215 7.66652 6.30404 7.75588 6.28346 7.85134C6.26272 7.94755 6.23997 8.04456 6.2166 8.12825C6.20496 8.16994 6.19405 8.20513 6.18419 8.23328C6.17932 8.24718 6.17515 8.25811 6.17176 8.26634L6.16778 8.27562C6.16701 8.27731 6.16655 8.27826 6.16641 8.27855C6.1664 8.27855 6.1664 8.27856 6.1664 8.27857C6.02897 8.54694 5.76907 8.69981 5.50794 8.69981H5.48063C5.45851 8.69813 5.40766 8.69019 5.32578 8.66857C5.24294 8.64671 5.15072 8.61694 5.06198 8.58535C5.02814 8.5733 4.9956 8.56128 4.9652 8.54971L4.73986 8.4536C4.25814 8.24812 3.50692 7.8079 2.7622 7.29375C2.01557 6.77828 1.32584 6.2231 0.948006 5.80297L0.940361 5.79447L0.932428 5.78642L0.932424 5.78641L0.932391 5.78638L0.932366 5.78635L0.932336 5.78632L0.932191 5.78617L0.930758 5.78472L0.924312 5.77811L0.89904 5.75191C0.87732 5.72922 0.847428 5.69759 0.81482 5.66193C0.743684 5.58413 0.680493 5.50967 0.650976 5.46665L0.645463 5.45861L0.639642 5.4508C0.550658 5.33135 0.5 5.17339 0.5 5.0047C0.5 4.81956 0.55263 4.65736 0.644446 4.52729C0.665497 4.50433 0.691697 4.47506 0.717762 4.44593C0.731054 4.43107 0.744311 4.41626 0.756832 4.40234C0.815459 4.33717 0.882201 4.26406 0.944605 4.20001Z" stroke="#222F5D"/>
+                    </svg>
+                </span>
+                <span class="text-gray-500">Iphone 13</span>
+            </div>
+        </div>
+        <!-- product section -->
+        <div class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-10">
+            <div class="flex flex-col lg:flex-row md:bg-white rounded-lg md:p-4 md:mb-10">
+                <!-- single product -->
+                <div class="px-4 md:p-0 flex flex-col items-center gap-y-9 gap-x-8 lg:flex-auto md:flex-row md:justify-start md:items-start">
+                    <div class="w-4/5 max-w-[250px] xl:max-w-xs ml-3 my-3">
+                        <img class="w-full h-auto" src="../assets/images/iphone-13.png" alt=""/>
+                        <div class="hidden md:flex items-center justifuy-between gap-x-4 px-2 mt-2">
+                            <div class="border border-gray-300 p-2 rounded-lg">
+                                <img class="w-full h-auto" src="../assets/images/iphone-13.png" alt=""/>
+                            </div>
+                            <div class="border border-gray-300 p-2 rounded-lg">
+                                <img class="w-full h-auto" src="../assets/images/iphone-13.png" alt=""/>
+                            </div>
+                            <div class="border border-gray-300 p-2 rounded-lg">
+                                <img class="w-full h-auto" src="../assets/images/iphone-13.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="w-full md:w-auto md:mr-8 mt-3">
+                        <div class="mb-8 text-center md:text-right flex flex-col items-start">
+                            <h1 class="text-slate-800 font-bold text-lg mb-1 tracking-wide md:text-2xl md:mb-2">Iphone 13 pro</h1>
+                            <h2 class="font-thin text-gray-500 tracking-wide md:text-lg">Apple iphone 13 256 GB</h2>
+                        </div>
+                        <hr class="hidden md:block mb-6 ml-3">
+                        <!-- color selection -->
+                        <div class="flex items-center justify-evenly w-full mb-5 md:justify-start">
+                            <span class="text-slate-800 md:text-xl">color:</span>
+                            <div x-data="{color: 'green'}" class="flex items-center md:ml-5">
+                                <div @click="color = 'green'" :class="color === 'green' ? 'ring-1 ring-green-400' : '' " class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full cursor-pointer bg-green-400 border-2 border-white">
+                                    <svg x-show="color === 'green'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div @click="color = 'blue'" :class="color === 'blue' ? 'ring-1 ring-blue-400' : '' " class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full cursor-pointer bg-blue-400 -ml-1 border-2 border-white">
+                                    <svg x-show="color === 'blue'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div @click="color = 'red'" :class="color === 'red' ? 'ring-1 ring-red-400' : '' " class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full cursor-pointer bg-red-400 -ml-1 border-2 border-white">
+                                    <svg x-show="color === 'red'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:w-6 sm:h-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- seller detail -->
+                        <div class="text-slate-800 flex flex-wrap gap-x-2 gap-y-3 text-xs md:hidden mb-6">
+                            <div class="flex items-center flex-auto">
+                                <div class="flex items-center ml-3">
+                                    <span>
+                                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="8" r="8" fill="#E2E2E2" />
+                                            <path d="M1.75586 11.5449V14.1641C1.75586 16.7833 2.80586 17.8333 5.42503 17.8333H8.56919C11.1884 17.8333 12.2384 16.7833 12.2384 14.1641V11.5449" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.00012 11.9993C8.06762 11.9993 8.85512 11.1302 8.75012 10.0627L8.36512 6.16602H5.64095L5.25012 10.0627C5.14512 11.1302 5.93262 11.9993 7.00012 11.9993Z" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                              d="M10.681 11.9993C11.8593 11.9993 12.7226 11.0427 12.606 9.87018L12.4426 8.26602C12.2326 6.74935 11.6493 6.16602 10.121 6.16602H8.3418L8.75013 10.2552C8.8493 11.2177 9.71846 11.9993 10.681 11.9993Z"
+                                              stroke="#222F5D"
+                                              stroke-width="0.875"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              d="M3.29005 11.9993C4.25255 11.9993 5.12172 11.2177 5.21505 10.2552L5.34339 8.96602L5.62339 6.16602H3.84422C2.31589 6.16602 1.73255 6.74935 1.52255 8.26602L1.36505 9.87018C1.24839 11.0427 2.11172 11.9993 3.29005 11.9993Z"
+                                              stroke="#222F5D"
+                                              stroke-width="0.875"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path d="M7.00008 14.916C6.02591 14.916 5.54175 15.4002 5.54175 16.3743V17.8327H8.45841V16.3743C8.45841 15.4002 7.97425 14.916 7.00008 14.916Z" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-1 font-medium">seller :</span>
+                                </div>
+                                <span class="font-light ml-2">Digitize</span>
+                            </div>
+                            <div class="flex items-center flex-auto">
+                                <div class="flex items-center">
+                                    <span>
+                                        <svg width="21" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="13" cy="8" r="8" fill="#E2E2E2" />
+                                            <path
+                                              d="M7.43 3.58 3.897 4.91c-.815.305-1.48 1.268-1.48 2.132v5.263c0 .836.552 1.934 1.225 2.437l3.046 2.274c.999.75 2.642.75 3.64 0l3.046-2.274c.673-.503 1.226-1.6 1.226-2.437V7.043c0-.87-.666-1.834-1.48-2.139L9.583 3.58c-.602-.22-1.566-.22-2.153 0Z"
+                                              stroke="#222F5D"
+                                              stroke-width="1.063"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-1 font-medium">warranty :</span>
+                                </div>
+                                <span class="font-light ml-2">18 months</span>
+                            </div>
+                            <div class="flex items-center justify-center w-full">
+                                <div class="flex items-center">
+                                    <span>
+                                        <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="8" r="8" fill="#E2E2E2" />
+                                            <path
+                                            d="M10 6.333V13c0 .733-.6 1.333-1.333 1.333H1.333V10.08a2.6 2.6 0 0 0 2.06.92 2.563 2.563 0 0 0 1.734-.707c.206-.173.38-.393.513-.633.24-.407.373-.887.36-1.387a2.655 2.655 0 0 0-.907-1.94H10Z"
+                                            stroke="#222F5D"
+                                            stroke-width="1.125"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            />
+                                            <path
+                                            d="M14.667 14.333v2c0 1.107-.894 2-2 2H12C12 17.6 11.4 17 10.667 17c-.734 0-1.334.6-1.334 1.333H6.667c0-.733-.6-1.333-1.334-1.333C4.6 17 4 17.6 4 18.333h-.667c-1.106 0-2-.893-2-2v-2h7.334C9.4 14.333 10 13.733 10 13V8.333h1.227c.48 0 .92.26 1.16.673L13.527 11h-.86c-.367 0-.667.3-.667.666v2c0 .367.3.667.667.667h2Z"
+                                            stroke="#222F5D"
+                                            stroke-width="1.125"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            />
+                                            <path
+                                            d="M5.333 19.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM10.667 19.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM14.667 13v1.333h-2a.669.669 0 0 1-.667-.666v-2c0-.367.3-.667.667-.667h.86l1.14 2Z"
+                                            stroke="#222F5D"
+                                            stroke-width="1.125"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            />
+                                            <path d="M6 8.333c0 .8-.353 1.513-.907 2a2.666 2.666 0 1 1-1.76-4.667A2.666 2.666 0 0 1 6 8.333Z" stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.5 7.499v1l-.833.5" stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="ml-1 font-medium"> delivery :</span>
+                                </div>
+                                <span class="font-light ml-2">Tech shop</span>
+                            </div>
+                        </div>
+                        <!-- product detail -->
+                        <div class="text-slate-700 font-bold bg-white p-4 mb-20 rounded-lg md:bg-none md:p-0">
+                            <h2 class="text-lg md:text-xl mb-5">Description</h2>
+                            <ul class="flex flex-col gap-y-2 mt-4 text-sm md:text-lg list-inside list-disc marker:text-orange-500">
+                                <li class="flex flex-col xl:flex-row lg:gap-x-2">
+                                    <span class="text-slate-600 font-light">Memory:</span>
+                                    <span class="font-bold">128 GB</span>
+                                </li>
+                                
+                                <li class="flex flex-col xl:flex-row lg:gap-x-2">
+                                    <span class="text-slate-600 font-light">Product Dimensions:</span>
+                                    <span class="font-bold">90 Grams</span>
+                                </li>
+                                
+                                <li class="flex flex-col xl:flex-row lg:gap-x-2">
+                                    <span class="text-slate-600 font-light">Cellular:</span>
+                                    <span class="font-bold tracking-widest">2G 3G 4G 5G</span>   
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- seller detail -->
+                <div class="lg:w-1/3 xl:w-1/4 hidden md:block">
+                    <div class="text-slate-800 flex flex-wrap gap-x-4 bg-gray-50 p-4 mt-3 mr-3 rounded-md">
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <span>
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="8" r="8" fill="#E2E2E2" />
+                                        <path d="M1.75586 11.5449V14.1641C1.75586 16.7833 2.80586 17.8333 5.42503 17.8333H8.56919C11.1884 17.8333 12.2384 16.7833 12.2384 14.1641V11.5449" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.00012 11.9993C8.06762 11.9993 8.85512 11.1302 8.75012 10.0627L8.36512 6.16602H5.64095L5.25012 10.0627C5.14512 11.1302 5.93262 11.9993 7.00012 11.9993Z" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                          d="M10.681 11.9993C11.8593 11.9993 12.7226 11.0427 12.606 9.87018L12.4426 8.26602C12.2326 6.74935 11.6493 6.16602 10.121 6.16602H8.3418L8.75013 10.2552C8.8493 11.2177 9.71846 11.9993 10.681 11.9993Z"
+                                          stroke="#222F5D"
+                                          stroke-width="0.875"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                        <path
+                                          d="M3.29005 11.9993C4.25255 11.9993 5.12172 11.2177 5.21505 10.2552L5.34339 8.96602L5.62339 6.16602H3.84422C2.31589 6.16602 1.73255 6.74935 1.52255 8.26602L1.36505 9.87018C1.24839 11.0427 2.11172 11.9993 3.29005 11.9993Z"
+                                          stroke="#222F5D"
+                                          stroke-width="0.875"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                        <path d="M7.00008 14.916C6.02591 14.916 5.54175 15.4002 5.54175 16.3743V17.8327H8.45841V16.3743C8.45841 15.4002 7.97425 14.916 7.00008 14.916Z" stroke="#222F5D" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="ml-1 font-bold">seller :</span>
+                            </div>
+                            <span class="font-light ml-2 text-slate-600">Digitize</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <span>
+                                    <svg width="21" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="13" cy="8" r="8" fill="#E2E2E2" />
+                                        <path
+                                          d="M7.43 3.58 3.897 4.91c-.815.305-1.48 1.268-1.48 2.132v5.263c0 .836.552 1.934 1.225 2.437l3.046 2.274c.999.75 2.642.75 3.64 0l3.046-2.274c.673-.503 1.226-1.6 1.226-2.437V7.043c0-.87-.666-1.834-1.48-2.139L9.583 3.58c-.602-.22-1.566-.22-2.153 0Z"
+                                          stroke="#222F5D"
+                                          stroke-width="1.063"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="ml-1 font-bold">warranty :</span>
+                            </div>
+                            <span class="font-light ml-2 text-slate-600">18 months</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <span>
+                                    <svg width="20" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="8" r="8" fill="#E2E2E2" />
+                                        <path
+                                        d="M10 6.333V13c0 .733-.6 1.333-1.333 1.333H1.333V10.08a2.6 2.6 0 0 0 2.06.92 2.563 2.563 0 0 0 1.734-.707c.206-.173.38-.393.513-.633.24-.407.373-.887.36-1.387a2.655 2.655 0 0 0-.907-1.94H10Z"
+                                        stroke="#222F5D"
+                                        stroke-width="1.125"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        />
+                                        <path
+                                        d="M14.667 14.333v2c0 1.107-.894 2-2 2H12C12 17.6 11.4 17 10.667 17c-.734 0-1.334.6-1.334 1.333H6.667c0-.733-.6-1.333-1.334-1.333C4.6 17 4 17.6 4 18.333h-.667c-1.106 0-2-.893-2-2v-2h7.334C9.4 14.333 10 13.733 10 13V8.333h1.227c.48 0 .92.26 1.16.673L13.527 11h-.86c-.367 0-.667.3-.667.666v2c0 .367.3.667.667.667h2Z"
+                                        stroke="#222F5D"
+                                        stroke-width="1.125"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        />
+                                        <path
+                                        d="M5.333 19.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM10.667 19.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667ZM14.667 13v1.333h-2a.669.669 0 0 1-.667-.666v-2c0-.367.3-.667.667-.667h.86l1.14 2Z"
+                                        stroke="#222F5D"
+                                        stroke-width="1.125"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        />
+                                        <path d="M6 8.333c0 .8-.353 1.513-.907 2a2.666 2.666 0 1 1-1.76-4.667A2.666 2.666 0 0 1 6 8.333Z" stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.5 7.499v1l-.833.5" stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="ml-1 font-bold">delivery :</span>
+                            </div>
+                            <span class="font-light ml-2 text-slate-600">Tech shop</span>
+                        </div>
+                        <!-- fixed add to cart button -->
+                        <div class="md:block bg-gray-50 text-slate-800 mt-10">
+                            <span class="font-bold text-orange-500">$450</span>
+                            <div class="flex justify-center ">
+                                <button class="p-1 mt-1 text-white bg-orange-500 rounded-md text-sm px-9">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fixed add to cart button -->
+    <div class="md:hidden fixed flex items-center justify-between left-0 right-0 bottom-0 w-full bg-white shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)] px-4 py-2 gap-x-4">
+        <button class="flex-auto py-3 text-white bg-orange-500 rounded-md">Add to Cart</button>
+        <div class="flex flex-col items-end text-slate-800">
+            <span class="font-bold">$450</span>
+        </div>
+    </div>
+    <!-- bottom info -->
+    <div class="bg-white mb-3 grid grid-cols-5 shadow-md">
+        <div class="xl:col-span-3 lg:col-span-3 md:col-span-2 hidden md:block p-8">
+            <div class="mb-4">
+                <span class="text-2xl font-extrabold text-orange-600">Digi</span>
+                <span class="text-2xl font-extrabold text-slate-800 -ml-1">tize</span>
+            </div>
+            <div class="mt-4 m-1">
+                <span class="text-slate-800 tracking-wider">
+                    Digitiz is the supplier of the latest electronics products such as laptops, smartphones and smartwatches.
+                </span>    
+                <span class="block"> 
+                    Digitiz has been proud to serve <span class="text-orange-600">232,122 </span>people so far.
+                </span>
+            </div>
+        </div>
+        <div class="xl:col-span-1 lg:col-span-1 md:col-span-1 hidden md:block mt-16 pt-3 pb-2 text-slate-800">
+            <span class="font-bold">Products</span>
+            <span class="block text-sm pt-2.5">Mobiles</span>
+            <span class="block text-sm pt-2.5">Laptops</span>
+            <span class="block text-sm pt-2.5">Smartwatches</span>
+        </div>
+        <div class="xl:col-span-1 lg:col-span-1 md:col-span-2 hidden md:block m-4 md:mt-10">
+            <div class="flex justify-start">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.023935389661!2d51.3915237!3d35.7010286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e011d1b6ca4ed%3A0x84c14853fc8780ee!2sTehran%20Province%2C%20Tehran%2C%20Enghelab%20Square%2C%20Iran!5e0!3m2!1sen!2sae!4v1655649331132!5m2!1sen!2sae" class="w-36" width="130" height="130" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="md:mt-4">
+                <div class="flex items-center justify-start text-slate-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 stroke-orange-600 -mr-1" viewBox="0 0 20 20" fill="orange">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span class="ml-2">021-2345</span>
+                </div>
+                <a class="flex justify-start mb-3" href="#">info@digitize.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
